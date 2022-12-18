@@ -17,9 +17,11 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body class="grid min-h-screen">
-    <header>
-      <nav>
-        <ul>
+    <header
+      class="col-auto grid grid-flow-col justify-between place-self-stretch"
+    >
+      <nav class="order-2">
+        <ul class="grid grid-flow-col gap-5">
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Popular</a></li>
@@ -27,18 +29,27 @@
           <li><a href="#">Categories</a></li>
         </ul>
       </nav>
-      <img src="./logo.svg" alt="logo" />
+      <img class="order-1" src="./logo.svg" alt="logo" />
+      <img class="order-2" src="./icon-menu.svg" alt="menu" />
+      <img class="order-2" src="./icon-menu-close.svg" alt="menu close" />
     </header>
-    <main>
-      <section>
-        <h1>The Bright Future of Web 3.0?</h1>
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <button>Read more</button>
-        <picture>
+    <main class="grid grid-cols-3 grid-rows-3 p-10">
+      <section
+        class="col-start-1 col-end-3 row-start-1 row-end-3 grid grid-cols-2 grid-rows-2 p-6"
+      >
+        <h1 class="col-start-1 col-end-2 row-start-2 row-end-3">
+          The Bright Future of Web 3.0?
+        </h1>
+        <div class="col-start-2 col-end-3 row-start-2 row-end-3">
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button>Read more</button>
+        </div>
+
+        <picture class="col-start-1 col-end-3 row-start-1 row-end-2">
           <source
             media="(min-width: 768px)"
             srcset="./image-web-3-desktop.jpg"
@@ -49,8 +60,8 @@
           />
         </picture>
       </section>
-      <h2>New</h2>
-      <nav>
+      <nav class="col-start-3 col-end-4 row-start-1 row-end-3 p-6">
+        <h2>New</h2>
         <div>
           <a href="#">Hydrogen VS Electric Cars</a>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
@@ -70,21 +81,38 @@
           </p>
         </div>
       </nav>
-      <nav>
+      <nav
+        class="col-start-1 col-end-4 row-start-3 row-end-4 grid grid-flow-col gap-4 p-6 [&>div]:grid [&>div]:grid-cols-2 [&>div>div]:order-2 [&>div>div]:grid [&>div>img]:order-1 [&>div>div>p]:order-1 [&>div>div>h2]:order-2 [&>div>div>h3]:order-3"
+      >
         <div>
-          <a href="#">Reviving Retro PCs</a>
-          <p>What happens when old PCs are given modern upgrades?</p>
-          <p>01</p>
+          <div>
+            <h2>
+              <a href="#">Reviving Retro PCs</a>
+            </h2>
+            <h3>What happens when old PCs are given modern upgrades?</h3>
+            <p>01</p>
+          </div>
+          <img src="./image-retro-pcs.jpg" alt="retro pc" />
         </div>
         <div>
-          <a href="#">Top 10 Laptops of 2022</a>
-          <p>Our best picks for various needs and budgets.</p>
-          <p>02</p>
+          <div>
+            <h2>
+              <a href="#">Top 10 Laptops of 2022</a>
+            </h2>
+            <h3>Our best picks for various needs and budgets.</h3>
+            <p>02</p>
+          </div>
+          <img src="./image-top-laptops.jpg" alt="top laptops" />
         </div>
         <div>
-          <a href="#">The Growth of Gaming</a>
-          <p>How the pandemic has sparked fresh opportunities.</p>
-          <p>03</p>
+          <div>
+            <h2>
+              <a href="#">The Growth of Gaming</a>
+            </h2>
+            <h3>How the pandemic has sparked fresh opportunities.</h3>
+            <p>03</p>
+          </div>
+          <img src="./image-gaming-growth.jpg" alt="gaming growth" />
         </div>
       </nav>
     </main>
