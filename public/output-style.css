@@ -573,54 +573,6 @@ video {
   grid-column: auto;
 }
 
-.col-start-1 {
-  grid-column-start: 1;
-}
-
-.col-start-3 {
-  grid-column-start: 3;
-}
-
-.col-start-2 {
-  grid-column-start: 2;
-}
-
-.col-end-3 {
-  grid-column-end: 3;
-}
-
-.col-end-4 {
-  grid-column-end: 4;
-}
-
-.col-end-2 {
-  grid-column-end: 2;
-}
-
-.row-start-1 {
-  grid-row-start: 1;
-}
-
-.row-start-3 {
-  grid-row-start: 3;
-}
-
-.row-start-2 {
-  grid-row-start: 2;
-}
-
-.row-end-3 {
-  grid-row-end: 3;
-}
-
-.row-end-4 {
-  grid-row-end: 4;
-}
-
-.row-end-2 {
-  grid-row-end: 2;
-}
-
 .grid {
   display: grid;
 }
@@ -629,44 +581,36 @@ video {
   display: none;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
+.w-6 {
+  width: 1.5rem;
 }
 
-.grid-flow-row {
-  grid-auto-flow: row;
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-\[2\.6rem\] {
+  width: 2.6rem;
+}
+
+.w-\[3rem\] {
+  width: 3rem;
+}
+
+.w-\[2\.9rem\] {
+  width: 2.9rem;
 }
 
 .grid-flow-col {
   grid-auto-flow: column;
-}
-
-.grid-cols-\[auto_auto\] {
-  grid-template-columns: auto auto;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .justify-between {
@@ -704,17 +648,44 @@ video {
   background-color: hsl(236 13% 42% / var(--tw-bg-opacity));
 }
 
-.bg-grayishBlue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(233 8% 79% / var(--tw-bg-opacity));
+.p-4 {
+  padding: 1rem;
 }
 
 .p-6 {
   padding: 1.5rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pb-\[1\.8rem\] {
+  padding-bottom: 1.8rem;
+}
+
+.pb-\[1\.9rem\] {
+  padding-bottom: 1.9rem;
 }
 
 html {
