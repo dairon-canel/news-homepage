@@ -20,7 +20,7 @@
     <header
       class="col-auto grid grid-flow-col justify-between place-self-stretch"
     >
-      <nav class="order-2">
+      <nav class="order-2 hidden">
         <ul class="grid grid-flow-col gap-5">
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
@@ -31,16 +31,24 @@
       </nav>
       <img class="order-1" src="./logo.svg" alt="logo" />
       <img class="order-2" src="./icon-menu.svg" alt="menu" />
-      <img class="order-2" src="./icon-menu-close.svg" alt="menu close" />
+      <img
+        class="order-2 hidden"
+        src="./icon-menu-close.svg"
+        alt="menu close"
+      />
     </header>
-    <main class="grid grid-cols-3 grid-rows-3 p-10">
+    <main class="grid bg-softOrange p-10 md:grid-cols-3 md:grid-rows-3">
       <section
-        class="col-start-1 col-end-3 row-start-1 row-end-3 grid grid-cols-2 grid-rows-2 p-6"
+        class="grid bg-softRed p-6 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-3 md:grid-cols-2 md:grid-rows-2"
       >
-        <h1 class="col-start-1 col-end-2 row-start-2 row-end-3">
+        <h1
+          class="order-2 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3"
+        >
           The Bright Future of Web 3.0?
         </h1>
-        <div class="col-start-2 col-end-3 row-start-2 row-end-3">
+        <div
+          class="order-3 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3"
+        >
           <p>
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
@@ -49,7 +57,9 @@
           <button>Read more</button>
         </div>
 
-        <picture class="col-start-1 col-end-3 row-start-1 row-end-2">
+        <picture
+          class="order-1 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2"
+        >
           <source
             media="(min-width: 768px)"
             srcset="./image-web-3-desktop.jpg"
@@ -60,7 +70,9 @@
           />
         </picture>
       </section>
-      <nav class="col-start-3 col-end-4 row-start-1 row-end-3 p-6">
+      <nav
+        class="bg-darkGrayishBlue p-6 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-3"
+      >
         <h2>New</h2>
         <div>
           <a href="#">Hydrogen VS Electric Cars</a>
@@ -82,7 +94,7 @@
         </div>
       </nav>
       <nav
-        class="col-start-1 col-end-4 row-start-3 row-end-4 grid grid-flow-col gap-4 p-6 [&>div]:grid [&>div]:grid-cols-2 [&>div>div]:order-2 [&>div>div]:grid [&>div>img]:order-1 [&>div>div>p]:order-1 [&>div>div>h2]:order-2 [&>div>div>h3]:order-3"
+        class="grid gap-4 p-6 md:col-start-1 md:col-end-4 md:row-start-3 md:row-end-4 md:grid-flow-col [&>div]:grid [&>div]:grid-cols-2 [&>div>div]:order-2 [&>div>div]:grid [&>div>img]:order-1 [&>div>div>p]:order-1 [&>div>div>h2]:order-2 [&>div>div>h3]:order-3"
       >
         <div>
           <div>
