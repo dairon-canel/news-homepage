@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  font-size: 0.9375rem;
+}
+
+.attribution {
+  position: fixed;
+  width: 100vw;
+  font-size: 0.75rem;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: white;
+  background: hsl(219, 29%, 14%);
+}
+.attribution a {
+  color: hsl(263, 55%, 70%);
+}
+
+.attribution a:hover {
+  color: hsl(263, 55%, 80%);
+}
