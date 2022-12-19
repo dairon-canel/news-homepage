@@ -19,9 +19,9 @@
   <body class="grid min-h-screen items-start">
     <main class="mb-32 grid">
       <header
-        class="grid w-full grid-flow-col justify-between place-self-center px-[0.95rem] pt-7 pb-[1.9rem] sm:bg-red-600 lg:max-w-[71.2rem] lg:bg-white lg:pb-[3.5rem] lg:pt-[5.6rem]"
+        class="grid w-full grid-flow-col justify-between place-self-center px-[0.95rem] pt-7 pb-[1.9rem] lg:max-w-[71.2rem] lg:bg-white lg:pb-[3.5rem] lg:pt-[5.6rem]"
       >
-        <nav class="order-2 hidden">
+        <nav class="order-2 hidden sm:block">
           <ul class="grid grid-flow-col gap-[2.4rem]">
             <li><a href="#">Home</a></li>
             <li><a href="#">New</a></li>
@@ -36,7 +36,7 @@
           alt="logo"
         />
         <img
-          class="order-2 place-self-center"
+          class="order-2 place-self-center sm:hidden"
           src="./icon-menu.svg"
           alt="menu"
         />
@@ -47,15 +47,15 @@
         />
       </header>
       <section
-        class="grid gap-16 place-self-center self-start px-[0.95rem] lg:max-w-[71.2rem] lg:grid-cols-[21.8rem_auto_21.9rem] lg:grid-rows-[20rem_11.8rem_auto_auto] lg:gap-x-[1.9rem] [&>div]:grid [&>div]:grid-cols-[auto_auto] [&>div]:gap-[1.4rem] lg:[&>div]:mt-[4.5rem] [&>div>div]:order-2 [&>div>div]:grid [&>div>div]:content-start [&>div>img]:order-1 [&>div>img]:h-[8.15rem] [&>div>img]:object-cover [&>div>div>p]:order-1 [&>div>div>p]:text-[2.1rem] [&>div>div>p]:font-800 [&>div>div>p]:leading-[2.1rem] [&>div>div>p]:text-grayishBlue [&>div>div>h2]:order-2 [&>div>div>h2]:mt-[0.7rem] [&>div>div>h3]:order-3 [&>div>div>h3]:mt-[0.4rem] [&>div>div>h3]:leading-[1.6rem] [&>div>div>h3]:text-darkGrayishBlue lg:[&>div>div>h3]:text-[0.95rem] [&>div>div>h2>a]:text-[1.1rem] [&>div>div>h2>a]:font-700 [&>div>div>h2>a]:text-veryDarkBlue lg:[&>div>div>h2>a]:text-[1.14rem]"
+        class="grid gap-16 place-self-center self-start px-[0.95rem] sm:grid-cols-2 sm:gap-y-0 [&>div]:gap-[1.4rem] [&>div>div]:order-2 sm:[&>div>div]:w-auto lg:max-w-[71.2rem] lg:grid-cols-[21.8rem_auto_21.9rem] lg:grid-rows-[20rem_11.8rem_auto_auto] lg:gap-x-[1.9rem] [&>div]:grid [&>div]:grid-cols-[6.35rem_auto] lg:[&>div]:mt-[4.5rem] [&>div>div]:grid [&>div>img]:order-1 [&>div>img]:h-[8.15rem] [&>div>img]:object-cover [&>div>div>p]:order-1 [&>div>div>p]:text-[2.1rem] [&>div>div>p]:font-800 [&>div>div>p]:leading-[2.1rem] [&>div>div>p]:text-grayishBlue [&>div>div>h2]:order-2 [&>div>div>h2]:mt-[0.7rem] [&>div>div>h3]:order-3 [&>div>div>h3]:mt-[0.4rem] [&>div>div>h3]:leading-[1.6rem] [&>div>div>h3]:text-darkGrayishBlue lg:[&>div>div>h3]:text-[0.95rem] [&>div>div>h2>a]:text-[1.1rem] [&>div>div>h2>a]:font-700 [&>div>div>h2>a]:text-veryDarkBlue lg:[&>div>div>h2>a]:text-[1.14rem]"
       >
         <h1
-          class="order-2 mt-[1.6rem] pr-2 text-[2.45rem] font-800 leading-[2.5rem] text-veryDarkBlue lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3 lg:mt-[1.65rem] lg:text-[3.5rem] lg:leading-[3.5rem]"
+          class="order-2 -mt-[2.4rem] pr-2 text-[2.45rem] font-800 leading-[2.5rem] text-veryDarkBlue sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-3 sm:mt-[1.65rem] sm:text-[3.5rem] sm:leading-[3.5rem]"
         >
           The Bright Future of Web 3.0?
         </h1>
         <section
-          class="order-3 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3 lg:grid lg:h-full lg:justify-between"
+          class="order-3 -mt-16 sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 sm:-mt-0 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3 lg:grid lg:h-full lg:justify-between"
         >
           <p
             class="mt-[1rem] leading-[1.63rem] text-darkGrayishBlue lg:mt-[0.8rem] lg:leading-[1.49rem]"
@@ -71,10 +71,10 @@
           </button>
         </section>
         <picture
-          class="order-1 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:max-h-[18.8rem]"
+          class="order-1 sm:col-start-1 sm:col-end-3 sm:row-start-1 sm:row-end-2 sm:mb-4 sm:max-h-[18.8rem] lg:mb-0"
         >
           <source
-            media="(min-width: 768px)"
+            media="(min-width: 640px)"
             srcset="./image-web-3-desktop.jpg"
           />
           <img
@@ -84,7 +84,7 @@
           />
         </picture>
         <nav
-          class="order-4 bg-veryDarkBlue px-[1.3rem] pt-[1.1rem] lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3 lg:mb-0 lg:pl-[1.5rem] [&>div]:mt-[1.75rem] [&>div]:border-b-[1px] [&>div]:border-b-grayishBlue [&>div]:border-opacity-70 [&>div>a]:text-[1.25rem] [&>div>a]:font-700 [&>div>a]:text-white [&>div>p]:mt-[1rem] [&>div>p]:pr-4 [&>div>p]:leading-[1.65rem] [&>div>p]:text-grayishBlue [&>div>p]:text-opacity-70 lg:[&>div>p]:mt-[0.3rem]"
+          class="order-4 bg-veryDarkBlue px-[1.3rem] pt-[1.1rem] sm:col-start-2 sm:col-end-3 sm:row-start-2 sm:row-end-4 sm:mb-8 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3 lg:mb-0 lg:pl-[1.5rem] [&>div]:mt-[1.75rem] [&>div]:border-b-[1px] [&>div]:border-b-grayishBlue [&>div]:border-opacity-70 [&>div>a]:text-[1.25rem] [&>div>a]:font-700 [&>div>a]:text-white [&>div>p]:mt-[1rem] [&>div>p]:pr-4 [&>div>p]:leading-[1.65rem] [&>div>p]:text-grayishBlue [&>div>p]:text-opacity-70 lg:[&>div>p]:mt-[0.3rem]"
         >
           <h2
             class="-mb-[0.3rem] text-[2rem] font-700 text-softOrange text-opacity-95 lg:-mb-[0.8rem] lg:text-[2.8rem]"
@@ -112,7 +112,7 @@
             </p>
           </div>
         </nav>
-        <div class="order-5">
+        <div class="order-5 sm:mb-4 lg:mb-0">
           <div>
             <h2>
               <a href="#">Reviving Retro PCs</a>
@@ -122,7 +122,7 @@
           </div>
           <img src="./image-retro-pcs.jpg" alt="retro pc" />
         </div>
-        <div class="order-6 -mt-8 lg:-mt-0">
+        <div class="order-6 -mt-8 sm:-mt-0">
           <div>
             <h2>
               <a href="#">Top 10 Laptops of 2022</a>
@@ -132,7 +132,7 @@
           </div>
           <img src="./image-top-laptops.jpg" alt="top laptops" />
         </div>
-        <div class="order-7 -mt-8 lg:-mt-0">
+        <div class="order-7 -mt-8 sm:-mt-0">
           <div>
             <h2>
               <a href="#">The Growth of Gaming</a>
