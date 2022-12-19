@@ -14,6 +14,12 @@ p {
   font-size: 0.9375rem;
 }
 
+.no-scroll {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .attribution {
   position: fixed;
   width: 100vw;

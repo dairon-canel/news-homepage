@@ -15,15 +15,22 @@
     />
 
     <title>Frontend Mentor | News homepage</title>
+
+    <script src="./index.js" defer></script>
   </head>
-  <body class="grid min-h-screen items-start">
+  <body
+    class="overlay relative grid min-h-screen items-start transition-all after:absolute after:hidden after:h-full after:w-full after:bg-veryDarkBlue after:bg-opacity-50"
+  >
     <main class="mb-32 grid">
       <header
         class="grid w-full grid-flow-col justify-between place-self-center px-[0.95rem] pt-7 pb-[1.9rem] lg:max-w-[71.2rem] lg:bg-white lg:pb-[3.5rem] lg:pt-[5.6rem]"
       >
-        <nav class="order-2 hidden sm:block">
+        <nav
+          id="main-navigation"
+          class="main-navigation fixed top-0 right-0 z-10 order-2 hidden h-full w-[68.5%] bg-white sm:relative sm:block"
+        >
           <ul
-            class="grid grid-flow-col gap-[2.4rem] [&>li>a]:text-veryDarkBlue [&>li>a]:transition-all hover:[&>li>a]:text-softOrange"
+            class="grid grid-flow-row gap-[1.35rem] pl-[1.63rem] pt-[9rem] transition-all sm:grid-flow-col sm:gap-[2.4rem] sm:pl-0 sm:pt-0 [&>li>a]:text-[1.1rem] [&>li>a]:text-veryDarkBlue [&>li>a]:transition-all hover:[&>li>a]:text-softOrange"
           >
             <li><a href="#">Home</a></li>
             <li><a href="#">New</a></li>
@@ -37,16 +44,23 @@
           src="./logo.svg"
           alt="logo"
         />
-        <img
-          class="order-2 place-self-center sm:hidden"
-          src="./icon-menu.svg"
-          alt="menu"
-        />
-        <img
-          class="order-2 hidden"
-          src="./icon-menu-close.svg"
-          alt="menu close"
-        />
+        <button
+          class="menu-button z-20 order-2 sm:hidden"
+          aria-controls="main-navigation"
+          aria-expanded="false"
+          name="menu-button"
+        >
+          <img
+            class="menu-button-closed place-self-center py-[0.45rem] sm:hidden"
+            src="./icon-menu.svg"
+            alt="menu"
+          />
+          <img
+            class="menu-button-opened hidden w-auto place-self-center"
+            src="./icon-menu-close.svg"
+            alt="menu close"
+          />
+        </button>
       </header>
       <section
         class="grid gap-16 place-self-center self-start px-[0.95rem] sm:grid-cols-2 sm:gap-y-0 [&>div]:gap-[1.4rem] [&>div>div]:order-2 sm:[&>div>div]:w-auto lg:max-w-[71.2rem] lg:grid-cols-[21.8rem_auto_21.9rem] lg:grid-rows-[20rem_11.8rem_auto_auto] lg:gap-x-[1.9rem] [&>div]:grid [&>div]:grid-cols-[6.35rem_auto] lg:[&>div]:mt-[4.5rem] [&>div>div]:grid [&>div>img]:order-1 [&>div>img]:h-[8.15rem] [&>div>img]:object-cover [&>div>div>p]:order-1 [&>div>div>p]:text-[2.1rem] [&>div>div>p]:font-800 [&>div>div>p]:leading-[2.1rem] [&>div>div>p]:text-grayishBlue [&>div>div>h2]:order-2 [&>div>div>h2]:mt-[0.7rem] [&>div>div>h3]:order-3 [&>div>div>h3]:mt-[0.4rem] [&>div>div>h3]:leading-[1.6rem] [&>div>div>h3]:text-darkGrayishBlue lg:[&>div>div>h3]:text-[0.95rem] [&>div>div>h2>a]:text-[1.1rem] [&>div>div>h2>a]:font-700 [&>div>div>h2>a]:text-veryDarkBlue [&>div>div>h2>a]:transition-all hover:[&>div>div>h2>a]:text-softRed lg:[&>div>div>h2>a]:text-[1.14rem]"
@@ -147,7 +161,7 @@
       </section>
     </main>
 
-    <footer class="attribution">
+    <footer class="attribution z-20">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
