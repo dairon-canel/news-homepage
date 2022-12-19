@@ -16,100 +16,102 @@
 
     <title>Frontend Mentor | News homepage</title>
   </head>
-  <body class="grid min-h-screen">
-    <header
-      class="col-auto grid grid-flow-col justify-between place-self-stretch px-[0.95rem] pt-7 pb-[1.9rem]"
-    >
-      <nav class="order-2 hidden">
-        <ul class="grid grid-flow-col gap-5">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-      </nav>
-      <img
-        class="order-1 w-[2.9rem] place-self-center"
-        src="./logo.svg"
-        alt="logo"
-      />
-      <img class="order-2 place-self-center" src="./icon-menu.svg" alt="menu" />
-      <img
-        class="order-2 hidden"
-        src="./icon-menu-close.svg"
-        alt="menu close"
-      />
-    </header>
-    <main class="grid px-[0.95rem] md:grid-cols-3 md:grid-rows-3">
+  <body class="grid min-h-screen items-start">
+    <main class="grid">
+      <header
+        class="grid w-full grid-flow-col justify-between place-self-center px-[0.95rem] pt-7 pb-[1.9rem] md:max-w-[71.2rem] md:pb-[3.5rem] md:pt-[5.6rem]"
+      >
+        <nav class="order-2">
+          <ul class="grid grid-flow-col gap-[2.4rem]">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+        <img
+          class="order-1 w-[2.9rem] place-self-center md:w-[4rem]"
+          src="./logo.svg"
+          alt="logo"
+        />
+        <img
+          class="order-2 hidden place-self-center"
+          src="./icon-menu.svg"
+          alt="menu"
+        />
+        <img
+          class="order-2 hidden"
+          src="./icon-menu-close.svg"
+          alt="menu close"
+        />
+      </header>
       <section
-        class="grid pb-[4rem] md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-3 md:grid-cols-2 md:grid-rows-2"
+        class="grid place-self-center self-start px-[0.95rem] md:max-w-[71.2rem] md:grid-cols-[21.8rem_auto_21.9rem] md:grid-rows-[20rem_11.8rem_auto] md:gap-x-[1.9rem] [&>div]:grid [&>div]:grid-cols-[auto_auto] [&>div]:gap-[1.4rem] md:[&>div]:mt-[4.5rem] [&>div>div]:order-2 [&>div>div]:grid [&>div>div]:content-start [&>div>img]:order-1 [&>div>img]:h-[8.15rem] [&>div>img]:object-cover [&>div>div>p]:order-1 [&>div>div>p]:text-[2.1rem] [&>div>div>p]:font-800 [&>div>div>p]:leading-[2.1rem] [&>div>div>p]:text-grayishBlue [&>div>div>h2]:order-2 [&>div>div>h2]:mt-[0.7rem] [&>div>div>h3]:order-3 [&>div>div>h3]:mt-[0.4rem] [&>div>div>h3]:leading-[1.6rem] [&>div>div>h3]:text-darkGrayishBlue md:[&>div>div>h3]:text-[0.95rem] [&>div>div>h2>a]:text-[1.1rem] [&>div>div>h2>a]:font-700 [&>div>div>h2>a]:text-veryDarkBlue md:[&>div>div>h2>a]:text-[1.14rem]"
       >
         <h1
-          class="order-2 mt-[1.6rem] pr-2 text-[2.45rem] font-800 leading-[2.5rem] text-veryDarkBlue md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3"
+          class="order-2 mt-[1.6rem] pr-2 text-[2.45rem] font-800 leading-[2.5rem] text-veryDarkBlue md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 md:mt-[1.65rem] md:text-[3.5rem] md:leading-[3.5rem]"
         >
           The Bright Future of Web 3.0?
         </h1>
-        <div
-          class="order-3 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3"
+        <section
+          class="order-3 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:grid md:h-full md:justify-between"
         >
-          <p class="mt-[1rem] leading-[1.63rem] text-darkGrayishBlue">
+          <p
+            class="mt-[1rem] leading-[1.63rem] text-darkGrayishBlue md:mt-[0.8rem] md:leading-[1.49rem]"
+          >
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
           <button
-            class="mt-[1.35rem] bg-softRed px-[2rem] pt-[0.9rem] pb-[0.75rem] text-[0.9rem] font-700 uppercase tracking-[0.255rem] text-white text-opacity-90"
+            class="mt-[1.35rem] place-self-start self-end bg-softRed px-[2rem] pt-[0.9rem] pb-[0.75rem] text-[0.9rem] font-700 uppercase tracking-[0.255rem] text-white text-opacity-90"
           >
             Read more
           </button>
-        </div>
-
+        </section>
         <picture
-          class="order-1 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2"
+          class="order-1 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:max-h-[18.8rem]"
         >
           <source
             media="(min-width: 768px)"
             srcset="./image-web-3-desktop.jpg"
           />
           <img
+            class="h-full w-full object-cover"
             src="./image-web-3-mobile.jpg"
             alt="pieces with different shapes"
           />
         </picture>
-      </section>
-      <nav
-        class="mb-[3.95rem] bg-veryDarkBlue px-[1.3rem] pt-[1.1rem] md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-3 [&>div]:mt-[1.75rem] [&>div]:border-b-[1px] [&>div]:border-b-grayishBlue [&>div]:border-opacity-70 [&>div>a]:text-[1.25rem] [&>div>a]:font-700 [&>div>a]:text-white [&>div>p]:mt-[1rem] [&>div>p]:pr-4 [&>div>p]:leading-[1.65rem] [&>div>p]:text-grayishBlue [&>div>p]:text-opacity-70"
-      >
-        <h2
-          class="-mb-[0.3rem] text-[2rem] font-700 text-softOrange text-opacity-95"
+        <nav
+          class="mb-[3.95rem] bg-veryDarkBlue px-[1.3rem] pt-[1.1rem] md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-3 md:mb-0 md:pl-[1.5rem] [&>div]:mt-[1.75rem] [&>div]:border-b-[1px] [&>div]:border-b-grayishBlue [&>div]:border-opacity-70 [&>div>a]:text-[1.25rem] [&>div>a]:font-700 [&>div>a]:text-white [&>div>p]:mt-[1rem] [&>div>p]:pr-4 [&>div>p]:leading-[1.65rem] [&>div>p]:text-grayishBlue [&>div>p]:text-opacity-70 md:[&>div>p]:mt-[0.3rem]"
         >
-          New
-        </h2>
-        <div>
-          <a href="#">Hydrogen VS Electric Cars</a>
-          <p class="mb-[1.1rem]">
-            Will hydrogen-fueled cars ever catch up to EVs?
-          </p>
-        </div>
-        <div>
-          <a href="#">The Downsides of AI Artistry</a>
-          <p class="mb-[1.1rem]">
-            What are the possible adverse effects of on-demand AI image
-            generation?
-          </p>
-        </div>
-        <div class="border-none">
-          <a href="#">Is VC Funding Drying Up?</a>
-          <p class="mb-[0.75rem]">
-            Private funding by VC firms is down 50% YOY. We take a look at what
-            that means.
-          </p>
-        </div>
-      </nav>
-      <nav
-        class="mb-20 grid gap-[2rem] md:col-start-1 md:col-end-4 md:row-start-3 md:row-end-4 md:grid-flow-col [&>div]:grid [&>div]:grid-cols-[auto_auto] [&>div]:gap-[1.4rem] [&>div>div]:order-2 [&>div>div]:grid [&>div>div]:content-start [&>div>img]:order-1 [&>div>img]:h-[8.15rem] [&>div>img]:object-cover [&>div>div>p]:order-1 [&>div>div>p]:text-[2.1rem] [&>div>div>p]:font-800 [&>div>div>p]:leading-[2.1rem] [&>div>div>p]:text-grayishBlue [&>div>div>h2]:order-2 [&>div>div>h2]:mt-[0.7rem] [&>div>div>h3]:order-3 [&>div>div>h3]:mt-[0.4rem] [&>div>div>h3]:leading-[1.6rem] [&>div>div>h3]:text-darkGrayishBlue [&>div>div>h2>a]:text-[1.1rem] [&>div>div>h2>a]:font-700 [&>div>div>h2>a]:text-veryDarkBlue"
-      >
+          <h2
+            class="-mb-[0.3rem] text-[2rem] font-700 text-softOrange text-opacity-95 md:-mb-[0.8rem] md:text-[2.8rem]"
+          >
+            New
+          </h2>
+          <div>
+            <a href="#">Hydrogen VS Electric Cars</a>
+            <p class="mb-[1.1rem] md:mb-[1.8rem]">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div>
+            <a href="#">The Downsides of AI Artistry</a>
+            <p class="mb-[1.1rem] md:mb-[1.8rem]">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="border-none">
+            <a href="#">Is VC Funding Drying Up?</a>
+            <p class="mb-[0.75rem]">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </nav>
         <div>
           <div>
             <h2>
@@ -140,8 +142,9 @@
           </div>
           <img src="./image-gaming-growth.jpg" alt="gaming growth" />
         </div>
-      </nav>
+      </section>
     </main>
+
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
