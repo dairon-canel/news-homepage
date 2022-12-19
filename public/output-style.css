@@ -803,6 +803,12 @@ video {
   --tw-text-opacity: 0.95;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -829,12 +835,17 @@ p {
 }
 
 .attribution a {
-  transition: all 0.3s;
+  transition: all 150ms;
   color: hsl(35, 77%, 62%);
 }
 
 .attribution a:hover {
   color: hsl(35, 100%, 75%);
+}
+
+.hover\:bg-veryDarkBlue:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1116,6 +1127,11 @@ p {
   margin-top: 0.7rem;
 }
 
+.\[\&\>div\>div\>h2\]\:bg-softRed>div>div>h2 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(5 85% 63% / var(--tw-bg-opacity));
+}
+
 .\[\&\>div\>div\>h3\]\:order-3>div>div>h3 {
   order: 3;
 }
@@ -1139,6 +1155,11 @@ p {
   }
 }
 
+.\[\&\>div\>div\>h2\>a\]\:bg-softRed>div>div>h2>a {
+  --tw-bg-opacity: 1;
+  background-color: hsl(5 85% 63% / var(--tw-bg-opacity));
+}
+
 .\[\&\>div\>div\>h2\>a\]\:text-\[1\.1rem\]>div>div>h2>a {
   font-size: 1.1rem;
 }
@@ -1150,6 +1171,17 @@ p {
 .\[\&\>div\>div\>h2\>a\]\:text-veryDarkBlue>div>div>h2>a {
   --tw-text-opacity: 1;
   color: hsl(240 100% 5% / var(--tw-text-opacity));
+}
+
+.\[\&\>div\>div\>h2\>a\]\:transition-all>div>div>h2>a {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:\[\&\>div\>div\>h2\>a\]\:text-softRed>div>div>h2>a:hover {
+  --tw-text-opacity: 1;
+  color: hsl(5 85% 63% / var(--tw-text-opacity));
 }
 
 @media (min-width: 1130px) {
@@ -1169,6 +1201,17 @@ p {
 .\[\&\>div\>a\]\:text-white>div>a {
   --tw-text-opacity: 1;
   color: hsl(0 100% 100% / var(--tw-text-opacity));
+}
+
+.\[\&\>div\>a\]\:transition-all>div>a {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:\[\&\>div\>a\]\:text-softOrange>div>a:hover {
+  --tw-text-opacity: 1;
+  color: hsl(35 77% 62% / var(--tw-text-opacity));
 }
 
 .\[\&\>div\>p\]\:mt-\[1rem\]>div>p {
@@ -1196,4 +1239,25 @@ p {
   .lg\:\[\&\>div\>p\]\:mt-\[0\.3rem\]>div>p {
     margin-top: 0.3rem;
   }
+}
+
+.\[\&\>li\>a\]\:text-veryDarkBlue>li>a {
+  --tw-text-opacity: 1;
+  color: hsl(240 100% 5% / var(--tw-text-opacity));
+}
+
+.\[\&\>li\>a\]\:transition-all>li>a {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.\[\&\>li\>a\]\:hover\:text-softOrange:hover>li>a {
+  --tw-text-opacity: 1;
+  color: hsl(35 77% 62% / var(--tw-text-opacity));
+}
+
+.hover\:\[\&\>li\>a\]\:text-softOrange>li>a:hover {
+  --tw-text-opacity: 1;
+  color: hsl(35 77% 62% / var(--tw-text-opacity));
 }

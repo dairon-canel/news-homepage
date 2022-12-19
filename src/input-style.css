@@ -27,7 +27,7 @@ p {
   background: hsl(240, 100%, 5%);
 }
 .attribution a {
-  transition: all 0.3s;
+  transition: all 150ms;
   color: hsl(35, 77%, 62%);
 }
 
