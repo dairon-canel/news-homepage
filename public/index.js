@@ -2,7 +2,7 @@ const navigationButton = document.querySelector('.menu-button');
 const closedButton = document.querySelector('.menu-button-closed');
 const openedButton = document.querySelector('.menu-button-opened');
 
-const navigation = document.querySelector('.main-navigation');
+const navigation = document.querySelector('.navigation');
 const overlay = document.querySelector('.overlay');
 
 let isOpened = 'false';
