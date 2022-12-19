@@ -24,12 +24,13 @@ p {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   color: white;
-  background: hsl(219, 29%, 14%);
+  background: hsl(240, 100%, 5%);
 }
 .attribution a {
-  color: hsl(263, 55%, 70%);
+  transition: all 0.3s;
+  color: hsl(35, 77%, 62%);
 }
 
 .attribution a:hover {
-  color: hsl(263, 55%, 80%);
+  color: hsl(35, 100%, 75%);
 }
